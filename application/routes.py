@@ -141,7 +141,7 @@ def api(idx=None):
 
 @app.route("/user")
 def user():
-     #User(user_id=1, first_name="Christian", last_name="Hur", email="christian@uta.com", password="abc1234").save()
-     #User(user_id=2, first_name="Mary", last_name="Jane", email="mary.jane@uta.com", password="password123").save()
+     #User(user_id=1, first_name="Divya", last_name="Shree", email="Divya.shree@uta.com", password="abc1234").save()
+     #User(user_id=2, first_name="Ansh", last_name="D", email="ansh.d@uta.com", password="password123").save()
      users = User.objects.all()
      return render_template("user.html", users=users)
